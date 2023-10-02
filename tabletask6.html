@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table Assignment</title>
+	<style>
+		table, th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 10px;
+		}
+		table{
+			width:150%; //to show horizontal scroll makin rendering 1.5 times of the screen size
+		}
+
+		thead th {
+			position: sticky; 
+			top: 0; // saying the sticky row is 0px far from the top
+		}
+		
+		tr:nth-child(odd) {
+			background-color: gray;
+			color:white;
+		    .header,.headers{
+				background-color: gray;
+				color:white;
+			}
+		}
+		tr:nth-child(even) {
+		    background-color: white;
+		    .headers,.header {
+				background-color: white;
+			}
+			
+		}
+		
+		th{
+			background-color:#EE9322!important; //(if we do not use important, the heading row will be changed to gray color as mentioned in nth-child thingy)
+			color:#E1EEDD!important;
+		}
+		
+		.header{
+			position:sticky;
+			left:0;
+			z-index:1;
+		}
+		
+		.headers{
+			position:sticky;
+			z-index:1;
+			left:140px; 
+		}
+		
+	</style>
+  </head>
+  <body>
+  <div class='table'>
+	<table>
+	<thead>
+		<tr>
+			<th>Header-1</th>
+			<th class='header'>Header-2</th>
+			<th>Header-3</th>
+			<th class='headers'>Header-4</th>
+			<th>Header-5</th>
+			<th>Header-6</th>
+			<th>Header-7</th>
+			<th>Header-8</th>
+			<th>Header-9</th>
+			<th>Header-10</th>
+			<th>Header-11</th>
+			<th>Header-12</th>
+			<th>Header-13</th>
+			<th>Header-14</th>
+			<th>Header-15</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Row-1 Col-1</td>
+			<td class='header'>Row-1 Col-2</td>
+			<td>Row-1 Col-3</td>
+			<td class='headers'>Row-1 Col-4</td>
+			<td>Row-1 Col-5</td>
+			<td>Row-1 Col-6</td>
+			<td>Row-1 Col-7</td>
+			<td>Row-1 Col-8</td>
+			<td>Row-1 Col-9</td>
+			<td>Row-1 Col-10</td>
+			<td>Row-1 Col-11</td>
+			<td>Row-1 Col-12</td>
+			<td>Row-1 Col-13</td>
+			<td>Row-1 Col-14</td>
+			<td>Row-1 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-2 Col-1</td>
+			<td class='header'>Row-2 Col-2</td>
+			<td>Row-2 Col-3</td>
+			<td class='headers'>Row-2 Col-4</td>
+			<td>Row-2 Col-5</td>
+			<td>Row-2 Col-6</td>
+			<td>Row-2 Col-7</td>
+			<td>Row-2 Col-8</td>
+			<td>Row-2 Col-9</td>
+			<td>Row-2 Col-10</td>
+			<td>Row-2 Col-11</td>
+			<td>Row-2 Col-12</td>
+			<td>Row-2 Col-13</td>
+			<td>Row-2 Col-14</td>
+			<td>Row-2 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-3 Col-1</td>
+			<td class='header'>Row-3 Col-2</td>
+			<td>Row-3 Col-3</td>
+			<td class='headers'>Row-3 Col-4</td>
+			<td>Row-3 Col-5</td>
+			<td>Row-3 Col-6</td>
+			<td>Row-3 Col-7</td>
+			<td>Row-3 Col-8</td>
+			<td>Row-3 Col-9</td>
+			<td>Row-3 Col-10</td>
+			<td>Row-3 Col-11</td>
+			<td>Row-3 Col-12</td>
+			<td>Row-3 Col-13</td>
+			<td>Row-3 Col-14</td>
+			<td>Row-3 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-4 Col-1</td>
+			<td class='header'>Row-4 Col-2</td>
+			<td>Row-4 Col-3</td>
+			<td class='headers'>Row-4 Col-4</td>
+			<td>Row-4 Col-5</td>
+			<td>Row-4 Col-6</td>
+			<td>Row-4 Col-7</td>
+			<td>Row-4 Col-8</td>
+			<td>Row-4 Col-9</td>
+			<td>Row-4 Col-10</td>
+			<td>Row-4 Col-11</td>
+			<td>Row-4 Col-12</td>
+			<td>Row-4 Col-13</td>
+			<td>Row-4 Col-14</td>
+			<td>Row-4 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-5 Col-1</td>
+			<td class='header'>Row-5 Col-2</td>
+			<td>Row-5 Col-3</td>
+			<td class='headers'>Row-5 Col-4</td>
+			<td>Row-5 Col-5</td>
+			<td>Row-5 Col-6</td>
+			<td>Row-5 Col-7</td>
+			<td>Row-5 Col-8</td>
+			<td>Row-5 Col-9</td>
+			<td>Row-5 Col-10</td>
+			<td>Row-5 Col-11</td>
+			<td>Row-5 Col-12</td>
+			<td>Row-5 Col-13</td>
+			<td>Row-5 Col-14</td>
+			<td>Row-5 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-6 Col-1</td>
+			<td class='header'>Row-6 Col-2</td>
+			<td>Row-6 Col-3</td>
+			<td class='headers'>Row-6 Col-4</td>
+			<td>Row-6 Col-5</td>
+			<td>Row-6 Col-6</td>
+			<td>Row-6 Col-7</td>
+			<td>Row-6 Col-8</td>
+			<td>Row-6 Col-9</td>
+			<td>Row-6 Col-10</td>
+			<td>Row-6 Col-11</td>
+			<td>Row-6 Col-12</td>
+			<td>Row-6 Col-13</td>
+			<td>Row-6 Col-14</td>
+			<td>Row-6 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-7 Col-1</td>
+			<td class='header'>Row-7 Col-2</td>
+			<td>Row-7 Col-3</td>
+			<td class='headers'>Row-7 Col-4</td>
+			<td>Row-7 Col-5</td>
+			<td>Row-7 Col-6</td>
+			<td>Row-7 Col-7</td>
+			<td>Row-7 Col-8</td>
+			<td>Row-7 Col-9</td>
+			<td>Row-7 Col-10</td>
+			<td>Row-7 Col-11</td>
+			<td>Row-7 Col-12</td>
+			<td>Row-7 Col-13</td>
+			<td>Row-7 Col-14</td>
+			<td>Row-7 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-8 Col-1</td>
+			<td class='header'>Row-8 Col-2</td>
+			<td>Row-8 Col-3</td>
+			<td class='headers'>Row-8 Col-4</td>
+			<td>Row-8 Col-5</td>
+			<td>Row-8 Col-6</td>
+			<td>Row-8 Col-7</td>
+			<td>Row-8 Col-8</td>
+			<td>Row-8 Col-9</td>
+			<td>Row-8 Col-10</td>
+			<td>Row-8 Col-11</td>
+			<td>Row-8 Col-12</td>
+			<td>Row-8 Col-13</td>
+			<td>Row-8 Col-14</td>
+			<td>Row-8 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-9 Col-1</td>
+			<td class='header'>Row-9 Col-2</td>
+			<td>Row-9 Col-3</td>
+			<td class='headers'>Row-9 Col-4</td>
+			<td>Row-9 Col-5</td>
+			<td>Row-9 Col-6</td>
+			<td>Row-9 Col-7</td>
+			<td>Row-9 Col-8</td>
+			<td>Row-9 Col-9</td>
+			<td>Row-9 Col-10</td>
+			<td>Row-9 Col-11</td>
+			<td>Row-9 Col-12</td>
+			<td>Row-9 Col-13</td>
+			<td>Row-9 Col-14</td>
+			<td>Row-9 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-10 Col-1</td>
+			<td class='header'>Row-10 Col-2</td>
+			<td>Row-10 Col-3</td>
+			<td class='headers'>Row-10 Col-4</td>
+			<td>Row-10 Col-5</td>
+			<td>Row-10 Col-6</td>
+			<td>Row-10 Col-7</td>
+			<td>Row-10 Col-8</td>
+			<td>Row-10 Col-9</td>
+			<td>Row-10 Col-10</td>
+			<td>Row-10 Col-11</td>
+			<td>Row-10 Col-12</td>
+			<td>Row-10 Col-13</td>
+			<td>Row-10 Col-14</td>
+			<td>Row-10 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-11 Col-1</td>
+			<td class='header'>Row-11 Col-2</td>
+			<td>Row-11 Col-3</td>
+			<td class='headers'>Row-11 Col-4</td>
+			<td>Row-11 Col-5</td>
+			<td>Row-11 Col-6</td>
+			<td>Row-11 Col-7</td>
+			<td>Row-11 Col-8</td>
+			<td>Row-11 Col-9</td>
+			<td>Row-11 Col-10</td>
+			<td>Row-11 Col-11</td>
+			<td>Row-11 Col-12</td>
+			<td>Row-11 Col-13</td>
+			<td>Row-11 Col-14</td>
+			<td>Row-11 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-12 Col-1</td>
+			<td class='header'>Row-12 Col-2</td>
+			<td>Row-12 Col-3</td>
+			<td class='headers'>Row-12 Col-4</td>
+			<td>Row-12 Col-5</td>
+			<td>Row-12 Col-6</td>
+			<td>Row-12 Col-7</td>
+			<td>Row-12 Col-8</td>
+			<td>Row-12 Col-9</td>
+			<td>Row-12 Col-10</td>
+			<td>Row-12 Col-11</td>
+			<td>Row-12 Col-12</td>
+			<td>Row-12 Col-13</td>
+			<td>Row-12 Col-14</td>
+			<td>Row-12 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-13 Col-1</td>
+			<td class='header'>Row-13 Col-2</td>
+			<td>Row-13 Col-3</td>
+			<td class='headers'>Row-13 Col-4</td>
+			<td>Row-13 Col-5</td>
+			<td>Row-13 Col-6</td>
+			<td>Row-13 Col-7</td>
+			<td>Row-13 Col-8</td>
+			<td>Row-13 Col-9</td>
+			<td>Row-13 Col-10</td>
+			<td>Row-13 Col-11</td>
+			<td>Row-13 Col-12</td>
+			<td>Row-13 Col-13</td>
+			<td>Row-13 Col-14</td>
+			<td>Row-13 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-14 Col-1</td>
+			<td class='header'>Row-14 Col-2</td>
+			<td>Row-14 Col-3</td>
+			<td class='headers'>Row-14 Col-4</td>
+			<td>Row-14 Col-5</td>
+			<td>Row-14 Col-6</td>
+			<td>Row-14 Col-7</td>
+			<td>Row-14 Col-8</td>
+			<td>Row-14 Col-9</td>
+			<td>Row-14 Col-10</td>
+			<td>Row-14 Col-11</td>
+			<td>Row-14 Col-12</td>
+			<td>Row-14 Col-13</td>
+			<td>Row-14 Col-14</td>
+			<td>Row-14 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-15 Col-1</td>
+			<td class='header'>Row-15 Col-2</td>
+			<td>Row-15 Col-3</td>
+			<td class='headers'>Row-15 Col-4</td>
+			<td>Row-15 Col-5</td>
+			<td>Row-15 Col-6</td>
+			<td>Row-15 Col-7</td>
+			<td>Row-15 Col-8</td>
+			<td>Row-15 Col-9</td>
+			<td>Row-15 Col-10</td>
+			<td>Row-15 Col-11</td>
+			<td>Row-15 Col-12</td>
+			<td>Row-15 Col-13</td>
+			<td>Row-15 Col-14</td>
+			<td>Row-15 Col-15</td>
+		</tr>       
+		<tr>        
+			<td>Row-16 Col-1</td>
+			<td class='header'>Row-16 Col-2</td>
+			<td>Row-16 Col-3</td>
+			<td class='headers'>Row-16 Col-4</td>
+			<td>Row-16 Col-5</td>
+			<td>Row-16 Col-6</td>
+			<td>Row-16 Col-7</td>
+			<td>Row-16 Col-8</td>
+			<td>Row-16 Col-9</td>
+			<td>Row-16 Col-10</td>
+			<td>Row-16 Col-11</td>
+			<td>Row-16 Col-12</td>
+			<td>Row-16 Col-13</td>
+			<td>Row-16 Col-14</td>
+			<td>Row-16 Col-15</td>
+		</tr>       
+		<tr>        
+			<td>Row-17 Col-1</td>
+			<td class='header'>Row-17 Col-2</td>
+			<td>Row-17 Col-3</td>
+			<td class='headers'>Row-17 Col-4</td>
+			<td>Row-17 Col-5</td>
+			<td>Row-17 Col-6</td>
+			<td>Row-17 Col-7</td>
+			<td>Row-17 Col-8</td>
+			<td>Row-17 Col-9</td>
+			<td>Row-17 Col-10</td>
+			<td>Row-17 Col-11</td>
+			<td>Row-17 Col-12</td>
+			<td>Row-17 Col-13</td>
+			<td>Row-17 Col-14</td>
+			<td>Row-17 Col-15</td>
+		</tr>       
+		<tr>        
+			<td>Row-18 Col-1</td>
+			<td class='header'>Row-18 Col-2</td>
+			<td>Row-18 Col-3</td>
+			<td class='headers'>Row-18 Col-4</td>
+			<td>Row-18 Col-5</td>
+			<td>Row-18 Col-6</td>
+			<td>Row-18 Col-7</td>
+			<td>Row-18 Col-8</td>
+			<td>Row-18 Col-9</td>
+			<td>Row-18 Col-10</td>
+			<td>Row-18 Col-11</td>
+			<td>Row-18 Col-12</td>
+			<td>Row-18 Col-13</td>
+			<td>Row-18 Col-14</td>
+			<td>Row-18 Col-15</td>
+		</tr>       
+		<tr>        
+			<td>Row-19 Col-1</td>
+			<td class='header'>Row-19 Col-2</td>
+			<td>Row-19 Col-3</td>
+			<td class='headers'>Row-19 Col-4</td>
+			<td>Row-19 Col-5</td>
+			<td>Row-19 Col-6</td>
+			<td>Row-19 Col-7</td>
+			<td>Row-19 Col-8</td>
+			<td>Row-19 Col-9</td>
+			<td>Row-19 Col-10</td>
+			<td>Row-19 Col-11</td>
+			<td>Row-19 Col-12</td>
+			<td>Row-19 Col-13</td>
+			<td>Row-19 Col-14</td>
+			<td>Row-19 Col-15</td>
+		</tr>
+		<tr>
+			<td>Row-20 Col-1</td>
+			<td class='header'>Row-20 Col-2</td>
+			<td>Row-20 Col-3</td>
+			<td class='headers'>Row-20 Col-4</td>
+			<td>Row-20 Col-5</td>
+			<td>Row-20 Col-6</td>
+			<td>Row-20 Col-7</td>
+			<td>Row-20 Col-8</td>
+			<td>Row-20 Col-9</td>
+			<td>Row-20 Col-10</td>
+			<td>Row-20 Col-11</td>
+			<td>Row-20 Col-12</td>
+			<td>Row-20 Col-13</td>
+			<td>Row-20 Col-14</td>
+			<td>Row-20 Col-15</td>
+		</tr>
+	</tbody>
+	</table>
+	</div>
+  </body>
+</html>
